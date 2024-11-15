@@ -1,6 +1,5 @@
 import scrapy
 import json
-import requests
 from colorlog_config import logger
 from getcha.constants import car_list_headers
 
