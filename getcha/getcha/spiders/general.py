@@ -3,8 +3,9 @@ import json
 from colorlog_config import logger
 from getcha.constants import car_list_headers
 from getcha.items import GeneralInfoItem
+from getcha.spiders.base import BaseSpider
 
-class GeneralSpider(scrapy.Spider):
+class GeneralSpider(BaseSpider):
     name = "general"
     allowed_domains = ["m.getcha.kr", "api.getcha.io"]
 
@@ -50,9 +51,10 @@ class GeneralSpider(scrapy.Spider):
             item = GeneralInfoItem()
             item["car_id"] = car["id"]
             item["title"] = car["modelName"]
-            item["distance"] = car["mileage"]
-            item["year"] = car["carYear"]
+            item["distance"] = self.clean_number(car["mileage"])
+            item["year"] = self.format_date(car["carYear"])
             item["price"] = car["price"]
+            # available attributes
             item["brand"] = brand
             item["model"] = model
             item["submodel"] = submodel
