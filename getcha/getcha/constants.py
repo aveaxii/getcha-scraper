@@ -20,3 +20,24 @@ car_list_headers = {
     "x-picky-device-id": "1tBllc2vrofw8DrbVcUrEPmnqPDI",
     "x-picky-session-id": "sid|1731650466278"
 }
+
+car_detail_headers = {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,ru;q=0.8",
+    "origin": "https://used-car.getcha.kr",
+    "priority": "u=1, i",
+    "referer": "https://used-car.getcha.kr/",
+    "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "x-cha-agent": "web",
+    "x-cha-app-version": "8.6.26.292",
+    "x-cha-os": "web",
+    "x-picky-device-id": "1tBllc2vrofw8DrbVcUrEPmnqPDI",
+    "x-picky-session-id": "sid|1731901516324"
+}
